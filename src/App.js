@@ -67,6 +67,12 @@ class App extends React.Component {
     }));
   }
 
+  hasTrunfo = () => {
+    const { cardsArray } = this.state;
+    const search = cardsArray.some((card) => card.cardTrunfo === true);
+    return search;
+  }
+
   render() {
     const {
       cardName,
@@ -95,6 +101,7 @@ class App extends React.Component {
             onInputChange={ this.onInputChange }
             isSaveButtonDisabled={ this.isSaveButtonDisabled() }
             onSaveButtonClick={ this.onSaveButtonClick }
+            hasTrunfo={ this.hasTrunfo() }
           />
         </div>
         <div id="right">
