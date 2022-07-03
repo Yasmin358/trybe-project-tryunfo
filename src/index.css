@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 1056px;
 }
 
 code {
@@ -12,23 +13,58 @@ code {
     monospace;
 }
 
+#title {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+  padding: 27px 0;
+  margin: 0;
+}
+
 #left, #right {
   width: 50%;
-  height: 100%;
-  display: flex;
+  height: 1056px;
+  display: inline-flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+#left { 
+  background-color: lightyellow;
+  padding-top: 22px;
+}
+#right {
+  background-color: lightblue;
+  align-items: center;
+  padding-top: 22px;
+}
+
+#bottom {
+  height:auto;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: mistyrose;
+}
+
+#cardsTitle {
+  display: flex;
+  justify-content: center;
+  background-color: mistyrose;
+  padding: 15px 0;
+  margin: 0;
 }
 
 #formulario {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 10px;
-  width: 100%;
-  height: 80%;
-  background-color: lightcyan;
-  padding: 10px 0;
+  margin: 10px;
+  height: 550px;
+  width: 490px;
+  justify-content: center;
 }
 
 .itemsForm {
@@ -38,6 +74,7 @@ code {
   flex-wrap: wrap;
   width: 50%;
   text-align: center;
+  margin: 5px 0;
 }
 
 .itemsForm2 {
@@ -62,4 +99,96 @@ code {
 
 .itemsForm select {
   width: 208px;
+}
+
+#card {
+  width: 370px;
+  height: 550px;
+  border: 7px solid black;
+  border-radius: 30px;
+  background-color: mediumorchid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.itemsCard {
+  margin: 5px;
+  text-align: center;
+}
+
+#cardTitle, #cardRare{
+  background-color: violet;
+  height: 57px;
+  width: 100%; 
+}
+#cardRare{
+  margin-bottom: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+#cardTitle {
+  margin-top: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#cardTitle h2 {
+  font-size: 32px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#cardImage {
+  width: 100%;
+  height: 250px;
+}
+
+#cardImage img {
+  margin-bottom: 5px;
+  width: 50%;
+  height: 100%;
+}
+
+#cardDescription {
+  margin: 5px 10px;
+  background-color: lightgray;
+  width: 90%;
+  height: 110px;
+}
+
+#cardDescription p {
+  margin: 5px;
+
+}
+
+.attrValue {
+  background-color: gray;
+  padding: 6px 10px;
+  margin: 0;
+}
+
+.attrTitle {
+  margin: 7px 10px;
+}
+
+#cardAttr1 , #cardAttr2 , #cardAttr3 {
+  margin: 3px;
+  background-color: lightgray;
+  height: 30px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttom {
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 10px 5px;
 }

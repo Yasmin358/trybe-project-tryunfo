@@ -64,8 +64,6 @@ class Form extends React.Component {
           </label>
         </div>
 
-        <hr />
-
         <div className="itemsForm2">
           <h2>Atributos</h2>
           <label htmlFor="attr1">
@@ -149,6 +147,7 @@ class Form extends React.Component {
           onClick={ onSaveButtonClick }
           type="submit"
           data-testid="save-button"
+          id="buttom"
         >
           Salvar
         </button>

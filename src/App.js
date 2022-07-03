@@ -85,10 +85,13 @@ class App extends React.Component {
       cardTrunfo,
     } = this.state;
 
+    const { cardsArray } = this.state;
+
     return (
       <div>
+        <h1 id="title">Tryunfo!</h1>
         <div id="left">
-          <h1>Tryunfo!</h1>
+          <h3>Adicionar Carta: </h3>
           <Form
             cardName={ cardName }
             cardDescription={ cardDescription }
@@ -105,6 +108,7 @@ class App extends React.Component {
           />
         </div>
         <div id="right">
+          <h3>Pré visualização: </h3>
           <Card
             cardName={ cardName }
             cardDescription={ cardDescription }
@@ -115,6 +119,24 @@ class App extends React.Component {
             cardRare={ cardRare }
             cardTrunfo={ cardTrunfo }
           />
+        </div>
+        <h2 id="cardsTitle"> Cartas </h2>
+        <div id="bottom">
+          {
+            cardsArray.map((card) => (
+              <Card
+                key={ card.cardName }
+                cardName={ card.cardName }
+                cardDescription={ card.cardDescription }
+                cardAttr1={ card.cardAttr1 }
+                cardAttr2={ card.cardAttr2 }
+                cardAttr3={ card.cardAttr3 }
+                cardImage={ card.cardImage }
+                cardRare={ card.cardRare }
+                cardTrunfo={ card.cardTrunfo }
+              />
+            ))
+          }
         </div>
       </div>
     );
