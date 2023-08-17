@@ -1,0 +1,10 @@
+.itemsForm label {
+  align-items: center;
+  display: flex;
+  padding-right: 5px;
+}
+
+.itemsForm select {
+  width: 208px;
+}
+

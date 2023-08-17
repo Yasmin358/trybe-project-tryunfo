@@ -91,15 +91,6 @@ code {
   width: 200px;
   margin: 5px 10px;
 }
-.itemsForm label {
-  display: flex;
-  align-items: center;
-  padding-right: 5px;
-}
-
-.itemsForm select {
-  width: 208px;
-}
 
 #card {
   width: 370px;
@@ -111,11 +102,6 @@ code {
   align-items: center;
   flex-direction: column;
   margin: 10px;
-}
-
-.itemsCard {
-  margin: 5px;
-  text-align: center;
 }
 
 #cardTitle, #cardRare{
